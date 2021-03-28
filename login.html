@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-info">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+           
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="login.html">LOGIN</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="about.html">ABOUT US</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            
+              </nav>
+            </form>
+          </div>
+        </div>
+    
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+      </head>
+      <body>
+          <div class="full-page">
+              <div class="sub-page">
+                  <div class="navigation-bar">
+                      <div class="logo">
+                          <a href='photography.html'></a>
+                      </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="form-box">
+                     
+                        <div class="form">
+                    
+                  <form action="index.html" onsubmit="return validate()">
+                    <form class="login-form">
+                     
+                        <center><h1 class="main-heading">Login Form</h1></center>
+                <input type="text"placeholder="user name" id="uname"/>
+                <input type="password"placeholder="password" id="passw"/>
+                <button id="submit">LOGIN</button>
+                <p class="message">Not Registered? <a href="#">Register</a></p>
+                <script src="form1.js"></script>
+            </form>
+          </form>
+                 
+                            <form class="register-form">
+                              <form class="form-group text-center" action="login.html" method="POST" onsubmit="return validate1() && validate2()">
+                                <center><h1 class="main-heading">Register Form</h1></center>
+                                <input type="text" pattern="([A-Za-z0-9\.\-]+)?" title="Invalid email" name="fnname"
+                                    class="form-control" placeholder="Enter your Username.." id="username" maxlength="20"
+                                    required>
+                        
+                                <input type="text" autocomplete="off" class="form-control" id="email"
+                                    placeholder="Enter your E-mail.."
+                                    pattern="([A-Za-z0-9\.\-]+)@([A-Za-z0-9\-]+).([a-z]{2,3})(.[a-z]{2,3})?"
+                                    title="Invalid email" required />
+                                <label for="error" id="error"></label>
+                                
+                                <input placeholder="Enter your Phone number.."
+                                    pattern="^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$" class="form-control"
+                                    autocomplete="off" title="Invalid number" id="phone" required />
+                                
+                                <input name="password" class="form-control" id="password" type="password" size="15" maxlength=30
+                                    placeholder="Enter your Password.." required onkeyup="return passwordChanged();" />
+                                <span id="strength"> : </span>
+                                <input name="password" class="form-control" id="password" type="password" size="15" maxlength=30
+                                    placeholder="re-type your Password.." required onkeyup="return passwordChanged();" />
+                                <span id="strength"> : </span>
+        
+                                <input type="submit" name="Register" value="Submit" class="btn btn-primary btn-block btn-lg">
+                          
+                              <p class="message">Already Registered?<a href="#">Login</a>
+                                
+                            </form>
+        
+                        <script src="form.js"></script>
+				            </form>
+                    </form>
+                   </div>
+	                </div>
+                </div>
+                <div class="col-1">
+                  <p class='defination'>Welcome to the tourism site of Kerala.<br> Take Memories,<br>Leave Footprints<br>-----------<br>God's Own Country!!!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+    </script>
+    <script>
+        $('.message a').click(function(){$('form').animate({height: "toggle",opacity: "toggle"},"slow");});
+    </script>
+    
+</body>
+</html>
